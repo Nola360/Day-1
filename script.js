@@ -1,62 +1,49 @@
-// TYPE CONVERSION
-
+//  Numbers
+const num1 = 100;
+const num2 = 50;
 let val;
 
-// Convert number to string
-val = String(555);
-// expression below will overright the expression above
-val = String(4 + 4);
-
-// Boolean to string
-val = String(true);
-
-// Date to a String
-val = String(new Date());
-
-// Array to String
-val = String([1, 2, 3, 4, 5, 6, 7, 8]);
-
-//convert number toString() same as line 3
-val = (5).toString();
-val = (true).toString();
+// Simple math with numbers
+val = num1 + num2;
+val = num1 - num2;
+val = num1 * num2;
+val = num1 / num2;
+val = num1 & num2;
 
 
-// String to Number
-val = Number('5');
+// math Objects
+val = Math.PI;
+val = Math.E;
 
-// Boolean to numebr
+// Rounds Number up or down
+val = Math.round(2.8);
 
-// logs 1
-val = Number(true);
-// Logs 0
-val = Number(false);
-// Logs 0
-val = Number(null);
+// Rounds up to 3
+val = Math.ceil(2.3);
 
-// Logs NaN
-val = Number('Hello');
-val = Number([1, 2, 3]);
+// Rounds down to 2
+val = Math.floor(2.8)
 
+// Finds square root
+val = Math.sqrt(64);
 
-// Parse Int
-// Will only log 100 as an integer 
-val = parseInt('100.30');
+// Finds absolute number of 3
+val = Math.abs(-3);
 
-// ParseFloat will log 100.3
-val = parseFloat('100.30');
+// Power of a number (64)
+val = Math.pow(8, 2)
 
+// Returns Min number
+val = Math.min(2, 33, 4, 1, 55, 6, -3);
 
-// Output
+// Returns Max number
+val = Math.min(2, 33, 4, 1, 55, 6, 3);
+
+//Logs a Random number between 0 and defined number
+val = Math.random() * 20;
+
+// Produces random whole number
+val = Math.floor(Math.random() * 20);
+
 console.log(val);
-console.log(typeof val);
-// console.log(val.length);
-console.log(val.toFixed(2));
 
-// TYPE COERSION - will not acknowledge the data type
-const val1 = String(5);
-const val2 = 6;
-// Converts expression to number 56
-const sum = Number(val1 + val2);
-
-console.log(sum);
-console.log(typeof sum);
